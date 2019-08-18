@@ -1,0 +1,205 @@
+%Este comando hace que la página que contiene la introducción sea la número uno
+\setcounter{page}{1}
+\section*{Introducción}%introducción
+
+Las redes computacionales son un conjunto 
+de distintos equipos conectados entre sí mediante diferentes medios ya sea de manera alámbrica o innalámbrica,
+ de tal forma que les permite cumplir con el propósito de compartir información con la cuál se es posible abarcar 
+ distintos aspectos, como lo pueden ser la búsqueda de información para investigación, recolectar y almacenar datos personales, 
+ obtener servicios tales como el entretenimiento u otras apliciones empresariales. Hoy en día las redes abarcan un aspecto tan 
+ importante en la vida cotidiana que ha sido de gran importancia ser capaz de administrarla de una manera ágil y eficiente para 
+ poder satisfacer a todos aquellos usuarios que requieran hacer uso de ella y obtener una buena experiencia, 
+ debido a esta gran importancia es que se han creado distintas entidades con las cuáles ser capaz de lograrlo, 
+ dicha entidad es conocida como el administrador de la red. Con el paso del tiempo y el surgimiento de distintas tecnologías,
+  las redes computacionales han tenido que también evolucionar para solventar las nuevas necesidades que surgen.
+
+
+
+La importancia de la facilidad y rapidez en la administración de la red por parte del administrador recae en que no existe una 
+red que sea perfecta, e inevitablemente surgen problemas o nuevas configuraciones que deben de poder ser resueltas en el menor 
+tiempo posible lo cuál podría lograrse haciendo que esto sea cada vez más fácil. Con el paso del tiempo, se ha buscado lograr la
+ automatización de la red, esto mediante la creación de una tecnología que sea capaz de detectar y solucionar problemas en la red,
+así como también otorgar al administrador
+herramientas que le permitan realizar e implementar las configuraciones deseadas. Con la finalidad de lograr estas funciones es 
+que se han desarrollado controladores de red, herramientas de software capaces de comunicarse con los distintos dispositivos de red
+enviando instrucciones y recibiendo información de tal forma que en conjunto se puede administrar la red.
+
+La creación de los controladores de red permitió la idea de \textbf{redes definidas por software (SDN)}, las cuales emplean 
+herramientras de software como aplicaciones y dispositivos especializados para 
+ser capaces de implementar servicios y desplegar aplicaciones de la red, permitiendo así el avance en el desarrollo en los
+distintos aspectos que son de gran interés en toda red, tales como la escalabilidad, seguridad, administración, entre otros.
+Las SDN proporcionan al administrador de la red una manera inteligente, fácil y más rápida de supervisar, operar y realizar
+las modificaciones que el momento así lo demande en la red dada las necesidades que ocurran. 
+
+Las \textbf{SDN} nos brindan una gran y amplia gama de servicios y beneficios en una red. Con ellas se es capaz de
+simplificar la administración de la red, implementar redes complejas en un tiempo considerablemente menor al que tomaría
+hacerlo de otra manera, disminuir los costos de mantenimiento mediante la disminución del tiempo necesario para ser 
+administradas e implementadas, disminuir el uso de hardware específico. Otorgan la habilidad de programar configuraciones
+automáticas incrementando así la escalabilidad y rentabilidad, así como también solucionar problemas al instante, 
+reducir los costos y ayudar a innovar en nuevas aplicaciones y servicios para la red.  
+
+Las \textbf{SDN}  han permitido que cada vez más personas sean capaces de llevar a cabo las actividades
+que son requeridas en una red, puesto que el software es aquel que se se encarga de llevar a cabo las tareas, disminuyendo así la 
+posibilidad de un error humano. 
+Es así entonces, que se desarrollará una aplicación web que utilice las librerías de código abierto en Python llamada Netmiko y 
+Paramiko, desde la cuál un administrador de
+red será capaz de desplegar servicios en ella de tal manera que no sea necesario que tenga que conectarse 
+físicamente a los dispositivos, si no que mediante la ténica de "drag and drop" será capaz de implementarlos en los equipos que se 
+encuentren en la red a
+administrar de manera remota.
+
+
+% \textit{Wavelet}  texto raro
+
+
+
+\section*{Justificación}
+
+Las redes de computadoras se encuentran implementadas y operando en distintos ámbitos, realizando importantes tareas
+para muchos sectores de la sociedad, organizaciones públicas o privadas son sólo algunos de los 
+lugares en donde las redes computacionales son vitales para el correcto funcionamiento de sus actividades. Mediante el uso de las SDN las redes tendrían un 
+notable mejoramiento en distintas actividades que le conciernen a ésta, tales
+como su administración, implementación y mantenimiento. Es así como las SDN mejoran el control de una red, permitiendo separar el 
+plano de control del plano de datos. A su vez, estas permitirían una independencia del tipo del hardware y del proveedor de equipos, pues todo pasaría a ser 
+responsabilidad de el software implementado en cuestión. El nuevo paradigma de las SDN es relativamente nuevo, por lo que aún se 
+encuentra en desarrollo el cómo debe estar constituido, pero todo apunta a que las SDN son el futuro de las redes.
+
+Llevar a cabo una aplicación que sea capaz de implementar servicios en una red tendría la importancia de investigar y aportar 
+a una nueva tecnología vanguardista. Una aplicación capaz de 
+desplegar servicios desde un punto de vista de alto nivel facilitaría la tarea para el administrador, puesto que de esta
+forma se ahorraría tiempo que le toma a un administrador realizar cada una de las configuraciones,así 
+como se evitarían posibles errores que este podría cometer, como lo son errores en la sintaxis. Hacer que dicha 
+aplicación opere en una plataforma web ahorraría la necesidad de encontrarse físicamente en el lugar de la red a administrar,
+pudiendo así manipularla desde cualquier parte. Al mismo tiempo tiene una importancia al momento de 
+capacitar personal para adminstrar una red, pues ya no sería necesaria la enseñanza de comandos técnicos como lo es el uso de la CLI 
+de cada uno de los equipos.
+
+Debido a lo antes mencionado, implementar una aplicación  web que sea capaz de administrar una red, implementar los servicios en 
+ella, así como también darle un debido mantenimiento es de gran importancia para satisfacer dichas necesidades.
+\section*{Objetivos}
+
+\subsection*{Objetivo General}
+Diseño e implementación de una aplicación web para la administración de servicios en redes definidas por software.
+
+\subsection*{Objetivos Específicos}
+\begin{enumerate}
+  \item Diseñar e implementar un módulo para comunicar la aplicación con el controlador de la red.
+  \item Diseñar e implementar un módulo que recupere los datos necesarios sobre la topología de la red.
+  \item Diseñar e implementar un módulo para el despliegue en pantalla de la topología de la red.
+  \item Diseñar e implementar un módulo para detectar cambios en la topología de la red.
+  \item Diseñar e implementar un módulo para traducir instrucciones del usuario a comandos para los dispositivos de red.
+  \item Diseñar e implementar un módulo que envíe las instrucciones a los distintos dispositivos de red.
+  \item Diseñar e implementar los algoritmos para el despliegue de al menos 3 servicios en la red. 
+\end{enumerate}
+
+\section*{Trabajos Relacionados}
+
+La adminstración de las redes abarca muchos temas de interés ya que se encuentran en muchas distintas áreas. 
+Ya sea al nivel del software como del hardware las aplicaciones utilizadas para la administración de las redes proporciona
+ avances de distinta índole. Alguno trabajos que se encuentran relacionados con este tema son los siguientes:
+
+
+
+
+\begin{itemize}
+    \item \textbf{``Diseño e implementación de una aplicación
+    para la Administración de una Red en 1.0 Linux''  \cite{Rodriguez10}.} 
+    Aplicación computacional diseñada para  la gestión de la seguridad de una red mediante un router
+    de tecnología Cisco.    
+    \item \textbf{``Diseño e Implementación de una Aplicación para
+    la Administración del una Red en el SO Linux''  \cite{Garduno11}.}
+     Aplicación para la administración de una red en el Sistema Operativo Linux mediante el uso de SNMP (Simple Network Managment Protocol)
+     \item \textbf{''Sistema para la visualización gráfica de la topología de una red de computadoras''\cite{Alcantara15}.}
+     Aplicación de escritorio para la visualización de una red área local mediante el protocolo SNMP (Simple Network Managment Protocol) y el uso del lenguaje de programción Java.   
+    \item \textbf{``Diseño y desarrollo de una aplicación gráfica para la
+    configuración de redes virtuales de área local en un sistema
+    operativo LINUX" \cite{Marquez2013}.}
+    El objetivo principal es crear una nueva interfaz gráfica para la creación de redes virtuales de área local utilizando herramientas que sólo pueden ser utilizadas en la termianl de sistemas Linux.
+    \item \textbf{``HERRAMIENTAS DE SOFTWARE LIBRE PARA EL
+    MONITOREO DE ACTIVIDADES DE USUARIOS EN
+    REDES LAN'' \cite{Dino2018}.}
+    Realiza un informe detallado sobre la comparación de herramientras de software libre para monitorear actividades que ocurren en la red, esto mediante el uso e interpretación de distintos protocolos 
+    que son implementados para la seguridad en las redes.
+
+\end{itemize}
+
+
+\newpage
+\begin{table}[ht!]
+  \begin{tabular}{p{0.15\textwidth} p{0.4\textwidth} p{0.4\textwidth}}
+    \toprule
+    \textbf{{Referencia}} & \textbf{{Similitudes}} & \textbf{{Diferencias}} \\
+    \toprule
+    \cite{Rodriguez10} &
+    \begin{itemize}[leftmargin=*]
+        \item El sistema es desarrollado en un ambiente Linux.
+        \item El objetivo del sistema implementado.
+    \end{itemize} &
+    \begin{itemize}[leftmargin=*]
+        \item Uso de un protocolo distinto.
+        %\item Distinto enfoque tem\'atico.
+    \end{itemize} \\
+    \midrule
+    \cite{Garduno11} &
+    \begin{itemize}[leftmargin=*]
+        \item Implementación de un servidor.
+        \item Implementación de tecnologías web.
+    \end{itemize} &
+    \begin{itemize}[leftmargin=*]
+        \item Uso del protocolo SNMP. 
+        \item Ausencia de despliegue de la topolía de la red.
+    \end{itemize} \\
+    \midrule
+    \cite{Alcantara15} &
+    \begin{itemize}[leftmargin=*]
+        \item Visualización de la topolía de la red.
+    \end{itemize} &
+    \begin{itemize}[leftmargin=*]
+        \item Uso de SNMP.
+        \item Desarrollado con lenguaje de programación Java.
+    \end{itemize} \\
+     \midrule
+    \cite{Marquez2013} &
+    \begin{itemize}[leftmargin=*]
+        \item Tratamiento de se\~nales EEG.
+        \item Identificaci\'on de movimientos corporales.
+    \end{itemize} &
+    \begin{itemize}[leftmargin=*] 
+        \item Ausencia de implementaci\'on.
+    \end{itemize} \\
+    \midrule
+    \cite{Dino2018} &
+    \begin{itemize}[leftmargin=*]
+        \item An\'alisis de componentes de se\~nales EEG.
+    \end{itemize} &
+    \begin{itemize}[leftmargin=*]
+        \item Ausencia de implementaci\'on.
+    \end{itemize} \\
+    \midrule
+        \cite{Chacon14} &
+    \begin{itemize}[leftmargin=*]
+        \item Procesamiento de se\~nales.
+        \item Implementaci\'on en FPGA.
+    \end{itemize} &
+    \begin{itemize}[leftmargin=*]
+        \item Tipo de se\~nales a procesar. 
+    \end{itemize} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Comparación cualitativa de los trabajos relacionados con el proyecto propuesto.}
+  \label{table:related}
+\end{table}
+\newpage
+
+%Cerrar esta sección con una conclusión
+%\begin{center}
+ % \begin{minipage}{0.4\textwidth}
+  %  \centering
+   % M. en C. Oscar Alvarado Nava %grado y nombre completo del asesor
+  %\end{minipage}
+   % \begin{minipage}{0.4\textwidth}
+    %\centering
+   % Dr. Eduardo Rodr\'iguez Mart\'inez%grado y Nombre completo del coasesor
+  %\end{minipage}
+  %\newpage
+%\end{center}
